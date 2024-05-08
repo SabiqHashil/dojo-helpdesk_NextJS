@@ -19,7 +19,7 @@ export default async function TicketList() {
             <Link href={`/tickets/${ticket.id}`}>
               <h3>{ticket.title}</h3>
               <p>{ticket.body.slice(0, 200)}...</p>
-              <div className={`pill ${ticket.priority} `}>
+              <div className={`pill ${ticket.priority}`}>
                 {ticket.priority} priority
               </div>
             </Link>
